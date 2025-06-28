@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xGasless Deployer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>0xGasless Deployer</h1>
+        <p class="subtitle">
+            Deploy Solidity contracts to the Sepolia Testnet instantly, without paying for gas.
+        </p>
+
+        <div class="form-container">
+            <label for="contractNameInput">Contract Name</label>
+            <input type="text" id="contractNameInput" placeholder="e.g., SimpleStorage">
+
+            <label for="sourceCodeTextarea">Solidity Source Code</label>
+            <textarea id="sourceCodeTextarea"></textarea>
+
+            <button id="deployButton">Deploy Contract</button>
+        </div>
+
+        <div id="resultContainer" class="hidden">
+            <p id="resultMessage"></p>
+            <pre id="resultError"></pre>
+        </div>
+    </main>
+</body>
+</html>
